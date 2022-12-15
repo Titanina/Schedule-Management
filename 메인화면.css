@@ -2,9 +2,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Hahmlet:wght@300&display=swap');
 
 
-p#txt {
+h1 {
 
   font-size:  40px;
+  font-weight: bold;
   font-family: 'Hahmlet', serif;
 }
 section {
@@ -13,12 +14,20 @@ section {
   height: 500px;
   border: 1px solid #000;
   background-image: url(img/ground.jpg);
+  background-position: center;
   background-repeat: no-repeat;
-  background-position: relative;
-  top : 100px;
-  right : 300px;
-
-  
   background-size: cover;
-
 }
+
+
+
+p:nth-of-type(1) {
+  text-align: center;
+}
+ul{
+ 
+text-align : right;
+  position: top;
+}
+
+
