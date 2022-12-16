@@ -25,9 +25,11 @@ p:nth-of-type(1) {
   text-align: center;
 }
 ul{
- 
-text-align : right;
-  position: top;
+
+position: absolute;
+bottom: 70%;
+left : 85%;
 }
+
 
 
