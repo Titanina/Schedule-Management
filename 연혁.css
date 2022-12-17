@@ -1,0 +1,27 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Hahmlet:wght@300&display=swap');
+
+h1 {
+
+  font-size:  40px;
+  font-weight: bold;
+  font-family: 'Hahmlet', serif;
+  text-align: center;
+}
+section {
+
+  width: 2000px;
+  height: 2000px;
+  border: 1px solid #000;
+  background-image: url(img/angle.jpg);
+  object-fit: contain;
+
+}
+
+h3 {
+
+  font-weight: bold;
+  font-family: 'Hahmlet', serif;
+  text-align: center;
+  
+}
