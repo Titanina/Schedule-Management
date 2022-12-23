@@ -15,3 +15,11 @@ section {
   object-fit: contain;
 
 }
+
+ul{
+
+  position: absolute;
+  bottom: 70%;
+  left : 85%;
+  }
+  
