@@ -8,16 +8,6 @@ h1 {
   font-weight: bold;
   font-family: 'Hahmlet', serif;
 }
-section {
-
-  width: 1500px;
-  height: 500px;
-  border: 1px solid #000;
-  background-image: url(img/ground.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
 
 
 
@@ -30,6 +20,7 @@ position: absolute;
 bottom: 70%;
 left : 85%;
 }
+
 
 
 
