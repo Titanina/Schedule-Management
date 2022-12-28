@@ -1,6 +1,3 @@
-@charset "UTF-8";
-@import url('https://fonts.googleapis.com/css2?family=Hahmlet:wght@300&display=swap');
-
 h1 {
 
   font-size:  40px;
@@ -8,22 +5,17 @@ h1 {
   font-family: 'Hahmlet', serif;
   text-align: center;
 }
+
 section {
 
   width: 1900px;
-  height: 900px;
+  height: 1500px;
   border: 1px solid #000;
-  background-image: url(img/angle.jpg);
-  object-fit: contain;
+  background-image: url(img/partyhole.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+ 
 
-}
-
-h3 {
-
-  font-weight: bold;
-  font-family: 'Hahmlet', serif;
-  text-align: center;
-  
 }
 
 ul{
@@ -32,4 +24,16 @@ ul{
   bottom: 70%;
   left : 85%;
   }
+
+  .book_door {
+    position: absolute;
+    top : 150%;
+    left : 90%;
+  }
   
+  .book_door_text {
+    position: absolute;
+    top : 50%;
+    left : 20%;
+  
+  }
