@@ -7,21 +7,49 @@ h1 {
   font-size:  40px;
   font-weight: bold;
   font-family: 'Hahmlet', serif;
+  
+}
+
+p {
+
+  position: absolute;
+  left: 700px;
+  color : gold;
 }
 
 
 
-p:nth-of-type(1) {
-  text-align: center;
+section {
+
+  width: 1900px;
+  height: 1330px;
+  border: 1px solid #000;
+  background-image: url(img/party.jpg);
+  background-repeat: no-repeat;
+  background-size : contain;
+
 }
-ul{
 
-position: absolute;
-bottom: 70%;
-left : 85%;
+.party_door {
+  position: absolute;
+  top : 110%;
+  left : 43%;
 }
 
+.party_door_text {
+  position: absolute;
+  top : 50%;
+  left : 20%;
+}
 
+.book_door {
+  position: absolute;
+  top : 120%;
+  left : 85%;
+}
 
-
-
+.book_door_text {
+  position: absolute;
+  top : 50%;
+  left : 20%;
+}
