@@ -11,7 +11,7 @@ section {
   width: 1900px;
   height: 1500px;
   border: 1px solid #000;
-  background-image: url(img/partyhole.jpg);
+
   background-size: cover;
   background-repeat: no-repeat;
  
@@ -25,15 +25,4 @@ ul{
   left : 85%;
   }
 
-  .book_door {
-    position: absolute;
-    top : 150%;
-    left : 90%;
-  }
-  
-  .book_door_text {
-    position: absolute;
-    top : 50%;
-    left : 20%;
-  
-  }
+
