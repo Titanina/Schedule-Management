@@ -13,7 +13,7 @@ section {
   width: 1900px;
   height: 1900px;
   border: 1px solid #000;
-  background-image: url(img/bookroom.jpg);
+
   background-repeat: no-repeat;
   background-size: cover;
   object-fit: contain;
