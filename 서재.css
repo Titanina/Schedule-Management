@@ -8,30 +8,63 @@ h1 {
   font-family: 'Hahmlet', serif;
   text-align: center;
 }
-section {
 
-  width: 1900px;
-  height: 1900px;
-  border: 1px solid #000;
-
-  background-repeat: no-repeat;
-  background-size: cover;
-  object-fit: contain;
-
-}
 
 h3 {
-
+  position: absolute;
   font-weight: bold;
   font-family: 'Hahmlet', serif;
+  text-align: left;
+  top : 50%;
+}
+
+#book{
+  position: absolute; 
+  background-image: url(img/book.jpg);
+  width: 1900px;
+  height: 200px;
+  top: -5%;
+
+}
+p {
+  position: absolute;
+  top: 20%;
+  left: 30%;
+  line-height: normal;
   text-align: center;
+}
+
+#scout {
+  position: absolute;
+
+  width: 2000px;
+  height: 300px;
+  top: 90%;
+  background-repeat: no-repeat;
   
 }
+
+section {
+
+  height: 1400px;
+
+
+}
+
+
 
 ul{
 
   position: absolute;
   bottom: 70%;
-  left : 85%;
+  left : 75%; 
+  display: flex;
+  list-style: none;
+  text-align: center;
   }
-  
+
+  ul h1 {
+
+    margin-left: 80px;
+    
+  }
