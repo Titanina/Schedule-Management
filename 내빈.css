@@ -1,0 +1,111 @@
+h1 {
+
+  font-size:  40px;
+  font-weight: bold;
+  font-family: 'Hahmlet', serif;
+  text-align: center;
+}
+
+section {
+  width: 2000px;
+  height: 1500px;
+
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+
+
+  ul{
+
+    position: absolute;
+    bottom: 80%;
+    left : 70%; 
+    display: flex;
+    list-style: none;
+  }
+
+  ul h1 {
+
+    margin-left: 120px;
+    
+  }
+
+#meeting {
+
+  position: absolute;
+  bottom:55%;
+  left : 30%;
+  background-image: url(img/meeting.png);
+  width: 800px;
+  height: 300px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+
+  h3 {
+ position: absolute;
+ top : 90%;
+ font-weight: bold;
+ font-family: 'Hahmlet', serif;
+}
+
+
+h4 {
+  position: absolute;
+  top : 90%;
+  left : 40%;
+  font-size :20px;
+  font-weight: bold;
+  font-family: 'Hahmlet', serif;
+  text-align: center;
+}
+
+h5 {
+  position: absolute;
+  top : 90%;
+  left : 75%;
+  font-size :20px;
+  font-weight: bold;
+  font-family: 'Hahmlet', serif;
+  
+}
+
+
+
+#dualblade {
+
+  position: absolute;
+  background-image: url(img/human.png);
+  width: 800px;
+  height: 300px;
+  top : 60%;
+  background-repeat: no-repeat;
+
+}
+
+#soul {
+
+  position: absolute;
+  background-image: url(img/soul.jpg);
+  width: 800px;
+  height: 300px;
+  top : 60%;
+  left : 40%;
+  background-repeat: no-repeat;
+
+}
+
+#shadow {
+
+  position: absolute;
+  background-image: url(img/shadow.jpg);
+  width: 800px;
+  height: 300px;
+  top: 65%;
+  left : 80%;
+  background-repeat: no-repeat;
+}
+
