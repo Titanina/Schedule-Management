@@ -89,7 +89,7 @@ h5 {
 #soul {
 
   position: absolute;
-  background-image: url(img/soul.jpg);
+  background-image: url(img/human.png);
   width: 800px;
   height: 300px;
   top : 60%;
@@ -101,7 +101,7 @@ h5 {
 #shadow {
 
   position: absolute;
-  background-image: url(img/shadow.jpg);
+  background-image: url(img/human.png);
   width: 800px;
   height: 300px;
   top: 65%;
