@@ -1,9 +1,34 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Hahmlet:wght@300&display=swap');
 
+
+
+
+
+ body {
+  
+    font-size: 2vmax;
+    height: 100vh;
+
+    justify-content: center;
+    align-items: center;
+
+  }
+
+div {
+  padding: 3px;
+  font-family: 'Hahmlet', serif;
+  line-height: 100%;
+  font-size: 8vmin;
+}
+
+ 
+
+
+
 h1 {
 
-  font-size:  40px;
+  font-size:  20px;
   font-weight: bold;
   font-family: 'Hahmlet', serif;
   text-align: center;
@@ -11,6 +36,7 @@ h1 {
 
 
 h3 {
+  font-size: 20px;
   position: absolute;
   font-weight: bold;
   font-family: 'Hahmlet', serif;
@@ -24,8 +50,8 @@ h3 {
 #book{
   position: absolute; 
   background-image: url(img/book.jpg);
-  width: 1900px;
-  height: 200px;
+  width: 100%;
+  height: 25%;
   top: -5%;
 
 }
@@ -40,16 +66,16 @@ p {
 #scout {
   position: absolute;
 
-  width: 2000px;
-  height: 300px;
+  width: 100%;
+  height: 100%;
   top: 120%;
   background-repeat: no-repeat;
   
 }
 
 section {
-  width: 2000px;
-  height: 1800px;
+  width: 100%;
+  height: 200%;
 
 
 }
@@ -71,4 +97,5 @@ ul{
     margin-left: 80px;
     
   }
-
+ 
+  
