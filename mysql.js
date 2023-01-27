@@ -1,20 +1,45 @@
-var mysql = require('mysql');
-var Connection = mysql.createConnection({
-  host : 'localhost',
-  user : 'root',
-  password : '******',
-  database : 'study'
-});
+const mysql = require('mysql'); // #1
 
-Connection.connect();
+const mysqlConnection = {
+  init: function() {    // #2
+    return mysql.createConnection({
+              host : process.env.host,
+              port : process.env.port,
+              user : process.env.user,
+              password : process.env.password,
+              database : process.env.database
+    });
+  },
+open: function(con) {   // #3
+    con.connect(err => {
+      if(err){
+        console.log("MySQL 연결에 실패하였습니다. 에러 : ", err);
 
-Connection.query('SELECT * FROM 테이블 명', function(err, results, fields) {
-  if(err) {
-    console.log(err);
-  }
+      } 
+      else {
+        console.log("MySQL 연결에 성공했습니다.");
+      }
 
-console.log(results);
-});
 
-Connection.end();
+    });
 
+},
+
+close: function(con) { // #4
+  con.end(err => {
+    if(err) {
+      console.log("MySQL 종료에 실패하였습니다. 에러 : ", err);
+
+    }
+    else {
+      console.log("MySQL을 종료합니다.");
+    }
+  })
+
+
+}
+
+
+}
+
+module.exports = mysqlConnection; // #5
