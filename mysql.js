@@ -1,8 +1,11 @@
-const mysql = require('mysql'); // #1
+const { error } = require("console");
+const mysql = require('mysql');
 
 const mysqlConnection = {
-  init: function() {    // #2
+
+  init: function() {    
     return mysql.createConnection({
+
               host : process.env.host,
               port : process.env.port,
               user : process.env.user,
@@ -10,31 +13,31 @@ const mysqlConnection = {
               database : process.env.database
     });
   },
-open: function(con) {   // #3
-    con.connect(err => {
+open: function(con) {   
+
+    connection.connect(error => {
+
       if(err){
-        console.log("MySQL 연결에 실패하였습니다. 에러 : ", err);
+        console.log("데이터 베이스 연결에 실패했습니다. 에러 : ", err);
 
       } 
-      else {
-        console.log("MySQL 연결에 성공했습니다.");
-      }
-
-
+      console.log("데이터 베이스 연결에 성공했습니다.");
+ 
     });
 
 },
 
-close: function(con) { // #4
-  con.end(err => {
-    if(err) {
-      console.log("MySQL 종료에 실패하였습니다. 에러 : ", err);
+close: function ( connection ) {
+
+  connection.end(error => {
+    if(error) {
+      console.log("데이터 베이스를 종료하는데 실패했습니다. 에러 : ", error);
 
     }
-    else {
-      console.log("MySQL을 종료합니다.");
-    }
-  })
+ 
+      console.log("데이터베이스를 종료합니다.");
+
+  });
 
 
 }
@@ -42,4 +45,4 @@ close: function(con) { // #4
 
 }
 
-module.exports = mysqlConnection; // #5
+module.exports = mysqlConnection; 
