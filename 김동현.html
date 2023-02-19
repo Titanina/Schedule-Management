@@ -24,21 +24,22 @@
   
   <h1><img src="img/human.png">김동현님의 스케줄입니다.</h1>
 
-  <form action="http://localhost:3000" method="get" id="first">
-  <fieldset>
-    <legend>실패한 스케줄</legend>
-    <label>실패한 스케줄<input type="date"></label>
-    <p><label>실패한 스케줄 : <textarea name='content' rows='10' cols='30'></textarea><button type="submit">입력</button></label></p>
-    <p><label><textarea name='content' rows='10' cols='30'></textarea><button type="submit">입력</button></label></p>
-    <textarea name='content' rows='10' cols='30'></textarea><button type="submit">입력</button>
+  <form action="http://localhost:3000" method="post" id="first">
+    <p><input type="text" name="title" placeholder="title"></p>
+    <p><textarea name="description" placeholder="description"></textarea></p>
+    <p><input type="submit"></p>
+  </form>
 
+  <div class="form-group">
+    <label>날짜</label>
+    <input type="text" class="form-control" name="date" />
+  </div>
 
-  
-  </fieldset>
+  <button type="submit" class="btn btn-outline-secondary">Submit</button>
 </form>
 
 
-<form  action="http://localhost:3000" id="double" >
+<form  action="http://localhost:3000" method="post" id="double" >
   <fieldset>
     <legend>성공한 스케줄</legend>
     <label>성공한 스케줄<input type="date"></label>
