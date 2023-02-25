@@ -1,22 +1,57 @@
-const express = require('express')
-const mysql = require('mysql')
-const app = express()
-const port = 3000
-const dotenv = require('dotenv').config()
-const mysqlConObj = require('./config/mysql')
-const db = mysqlConObj.init()
-const bodyParser = require('body-parser')
-app.use(bodyParser.urlencoded({extended: true}))
-app.use(express.urlencoded({extended: true}))
+var http = require('http');
+var url = require('url');
+var qs = require('querystring');
 
 
 
-app.post('/', (req,res) => res.send('<h1>ShibaWorld</h1>'))
-
-app.listen(port, () => console.log('서버가 작동중입니다.'))
-
-app.post('localhost:3000', function(요청, 응답){
-  console.log(요청.body.title);
-  응답.send('전송완료')
+var app = http.createServer(function (request, response) {
+  var _url = request.url;
+  var pathname = url.parse(_url, true).pathname;
+  if (pathname === '/') {
+    response.writeHead(200);
+    response.end(`
+      <!doctype html>
+      <html>
+      <head>
+        <title>POST</title>
+        <meta charset="utf-8">
+      </head>
+      <body>
+        <form action="/post_test" method="post">
+          <p><input type="text" name="title" placeholder="할 일"></p>
+          <p><textarea name="description" placeholder="해낸 일"></textarea></p>
+          <p><input type="submit"></p>
+        </form>
+      </body>
+      </html>
+      `);
+  } else if (pathname === '/post_test') {
+    var body = '';
+    request.on('data', function (data) {
+      body = body + data;
+    });
+    request.on('end', function () {
+      var post = qs.parse(body);
+      console.log(post);
+      var title = post.title;
+      var description = post.description;
+      response.end(`
+          <!doctype html>
+          <html>
+          <head>
+            <title>POST</title>
+            <meta charset="utf-8">
+          </head>
+          <body>
+            <p>할 일 : ${title}</p>
+            <p>해낸 일 : ${description}</p>
+          </body>
+          </html>
+          `);
+    });
+  } else {
+    response.writeHead(404);
+    response.end('Not found');
+  }
 });
-
+app.listen(3000, () => console.log("서버 작동중입니다."));
