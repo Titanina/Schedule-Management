@@ -23,39 +23,20 @@
   </ul>
   
   <h1><img src="img/human.png">김동현님의 스케줄입니다.</h1>
-
-  <form action="localhost:3000" method="POST">
-    <div class="form-group">
-      <label>오늘의 할일</label>
-      <input type="text" class="form-control" name="title" />
-    </div>
-    <div class="form-group">
-      <label>날짜</label>
-      <input type="text" class="form-control" name="date" />
-    </div>
-    <button type="submit" class="btn btn-outline-secondary">Submit</button>
-  </form>
-
-  <div class="form-group">
-    <label>날짜</label>
-    <input type="text" class="form-control" name="date" />
-  </div>
-
-  <button type="submit" class="btn btn-outline-secondary">Submit</button>
-</form>
+  <form action="/post_test" method="post">
+      <p><input type="text" name="title" placeholder="title"></p>
+      <p><textarea name="description" placeholder="description"></textarea></p>
+      <p><input type="submit"></p>
+  </form>  
 
 
 <form  action="http://localhost:3000" method="post" id="double" >
-  <fieldset>
-    <legend>성공한 스케줄</legend>
-    <label>성공한 스케줄<input type="date"></label>
-    <p><label>성공한 스케줄 : <textarea name='content' rows='10' cols='30'></textarea><button type="submit">입력</button></label></p>
-    <p><label><textarea name='content' rows='10' cols='30'></textarea><button type="submit">입력</button></label></p>
-    <textarea name='content' rows='10' cols='30'></textarea><button type="submit">입력</button>
+  <form action="/post_test" method="post">
+    <p><input type="text" name="titletwo" placeholder="title"></p>
+    <p><textarea name="descriptiontwo" placeholder="description"></textarea></p>
+    <p><input type="submit"></p>
+</form>  
 
-  
-  </fieldset>
-</form>
 
 <form action="http://localhost:3000" id="triple">
   <fieldset>
