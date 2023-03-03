@@ -40,16 +40,13 @@
     </fieldset>
   </form>
 
-  <form action="http://localhost:3000" id="triple">
-    <fieldset>
-      <legend>도전할 스케줄</legend>
-      <label>도전할 스케줄<input type="date"></label>
-      <p><label>도전할 스케줄 : <textarea name='content' rows='10' cols='30'></textarea><button type="submit">입력</button></label></p>
-      <p><label><textarea name='content' rows='10' cols='30'></textarea><button type="submit">입력</button></label></p>
-      <textarea name='content' rows='10' cols='30'></textarea><button type="submit">입력</button>
 
-
-    
+  <form action="/post_test" method="post">
+    <p><input type="text" name="title" placeholder="title"></p>
+    <p><textarea name="description" placeholder="description"></textarea></p>
+    <p><input type="submit"></p>
+  </form>  
+      
     </fieldset>
   </form>
 
