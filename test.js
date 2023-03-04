@@ -28,7 +28,7 @@ var app = http.createServer(function (request, response) {
   } else if (pathname === '/post_test') {
     var body = '';
     request.on('data', function (data) {
-      body = body + data;
+      body = body+ data;
     });
     request.on('end', function () {
       var post = qs.parse(body);
