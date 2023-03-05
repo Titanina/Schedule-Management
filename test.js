@@ -4,7 +4,7 @@ var qs = require('querystring');
 
 
 
-var app = http.createServer(function (request, response) {
+varapp = http.createServer(function (request, response) {
   var _url = request.url;
   var pathname = url.parse(_url, true).pathname;
   if (pathname === '/') {
